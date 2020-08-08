@@ -1,0 +1,57 @@
+@import '../../main-styles.scss';
+
+.top-bar {
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(75deg, rgb(215, 180, 250), rgb(173, 200, 230));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family:'Lato';
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.total-budget-section{
+    height: 250px;
+    background: $dark;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: 'Lato';
+        font-size: 60px;
+        font-weight: 300;
+        color: white;
+
+        &.green {
+            color: lighten($green, 12%);
+        }
+
+        &.red {
+            color: lighten($red, 5%);
+        }
+    }
+}
+
+.add-item-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .add-item-container {
+        height: 50px;
+        width: 680px;
+        background: $red;
+    }
+}
